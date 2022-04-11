@@ -25,9 +25,6 @@ include_directories(
     .
     )
 
-add_definitions("-DCO_SINGLE_THREAD -DCO_MULTIPLE_OD")
-
-
 add_library(canopennode ${CAN_OPEN_NODE_HEADER} ${CANOPEN_SRC} )
 
 target_include_directories(canopennode PRIVATE ../driver)
